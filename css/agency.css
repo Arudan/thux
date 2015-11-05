@@ -56,6 +56,10 @@ h6 {
     font-weight: 700;
 }
 
+h1 {
+  color: #BDBCBC;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -175,8 +179,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #0F7BA4;
+  width: 220px;
+  padding: 8px 15px;
+  color: #0F7BA4;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -253,7 +258,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #444444;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -262,10 +267,11 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
+    height: 100vh;
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/background.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -351,19 +357,19 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#news .news-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#news .news-item .news-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#news .news-item .news-link .news-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -374,11 +380,11 @@ section h3.section-subheading {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#news .news-item .news-link .news-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#news .news-item .news-link .news-hover .news-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -389,16 +395,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#news .news-item .news-link .news-hover .news-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#news .news-item .news-link .news-hover .news-hover-content h3,
+#news .news-item .news-link .news-hover .news-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#news .news-item .news-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -406,24 +412,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#news .news-item .news-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#news .news-item .news-caption p {
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-#portfolio * {
+#news * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #news .news-item {
         margin: 0 0 30px;
     }
 }
@@ -769,7 +775,7 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.news-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -780,32 +786,32 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.news-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content p {
+.news-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.news-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.news-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.news-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .close-modal {
+.news-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -815,11 +821,11 @@ ul.social-buttons li a:active {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.news-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.news-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -830,7 +836,7 @@ ul.social-buttons li a:active {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.news-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -840,7 +846,7 @@ ul.social-buttons li a:active {
     transform: rotate(90deg);
 }
 
-.portfolio-modal .modal-backdrop {
+.news-modal .modal-backdrop {
     display: none;
     opacity: 0;
 }
