@@ -13,17 +13,18 @@ var cbpAnimatedHeader = (function() {
   var docElem = $(document);
   var header = $('.navbar-default');
   var didScroll = false;
-  var changeHeaderOn = 300;
+  var changeHeaderOn = $('header').height() - 100;
 
   function init() {
-		console.log('init');
     $( window ).scroll(function() {
-			console.log('ciao');
       if (!didScroll) {
         didScroll = true;
         setTimeout(scrollPage, 250);
       }
     });
+		$(window).resize(function() {
+			changeHeaderOn = $('header').height() - 100;
+		});
   }
 
   function scrollPage() {
