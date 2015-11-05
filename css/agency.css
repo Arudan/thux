@@ -307,6 +307,7 @@ header .btn-start {
   margin-top: 10vh;
 }
 
+/*
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
@@ -330,6 +331,7 @@ header .btn-start {
         line-height: 75px;
     }
 }
+*/
 
 section {
     padding: 100px 0;
